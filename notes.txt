@@ -1,0 +1,13 @@
+created VE. "mkvirtualenv portfolio_1_0"
+installed Django to this VE. "pip install django"
+created project. "django-admin startproject portfolio_1_0"
+created requirements file. "pip freeze > requirements.txt"
+migrate intern Django models. "python manage.py migrate"
+created app by "python3 manage.py startapp precious_metal"
+created file urls.py in folder of app precious_metal
+
+to precious_metal/urls.py added:
+from django.urls import path
+from . import views
+
+urlpatterns = []
