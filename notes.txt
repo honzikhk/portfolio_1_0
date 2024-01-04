@@ -11,3 +11,8 @@ from django.urls import path
 from . import views
 
 urlpatterns = []
+
+to portfolio_1_0/urls.py added:
+path("", include("precious_metal.urls")),  # and import "include"
+
+created folders /templates/precious_metal in app precious_metal. and file homepage_precious_metal.html
