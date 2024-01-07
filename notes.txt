@@ -16,3 +16,9 @@ to portfolio_1_0/urls.py added:
 path("", include("precious_metal.urls")),  # and import "include"
 
 created folders /templates/precious_metal in app precious_metal. and file homepage_precious_metal.html
+created superuser for acces to /admin page. "python manage.py createsuperuser" 
+
+add class PreciousMetal to precious_metal/models.py
+registred new model in precious_metal/admin.py to be able to add and see values at page /admin
+
+"write" model to db "python3 manage.py makemigrations" "python3 manage.py migrate"
