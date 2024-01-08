@@ -24,3 +24,6 @@ registred new model in precious_metal/admin.py to be able to add and see values 
 "write" model to db "python3 manage.py makemigrations" "python3 manage.py migrate"
 new view to handle homepage for precious_metal
 edit portfolio_1_0/urls.py and precious_metal/urls.py
+added .gitignore file
+
+?? create .env file to hide django secret key
