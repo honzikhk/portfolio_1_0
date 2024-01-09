@@ -26,5 +26,8 @@ new view to handle homepage for precious_metal
 edit portfolio_1_0/urls.py and precious_metal/urls.py
 added .gitignore file
 
-?? create .env file to hide django secret key
+?? create .env file to hide django secret key |-> DONE
 ?? the base/homepage does not work |-> add app base in settings.py
+
+?? make forms for input in metals
+?? change template for metal - for display values
