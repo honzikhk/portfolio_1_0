@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     "precious_metal",
+    "base",
 ]
 
 MIDDLEWARE = [
