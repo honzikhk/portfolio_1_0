@@ -29,5 +29,8 @@ added .gitignore file
 ?? create .env file to hide django secret key |-> DONE
 ?? the base/homepage does not work |-> add app base in settings.py
 
+made base.html as a master template. every page will "inheritate" the "html must code" from this template by "extends"
+
 ?? make forms for input in metals
 ?? change template for metal - for display values
+

@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio 1.0</title>
+</head>
+
+
+<span>{% now "d.m.Y" %}</span><br>
+<span><a href="{% url "base_homepage" %}">Homepage</a></span>
+<span><a href="{% url "precious_metal_homepage" %}">Precious metals</a></span>
+
+<div>
+    {% block body %}
+    {% endblock body %}
+    {% block form %}
+    {% endblock form %}
+</div>
+
+
+</html>
