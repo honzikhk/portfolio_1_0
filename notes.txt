@@ -31,6 +31,6 @@ added .gitignore file
 
 made base.html as a master template. every page will "inheritate" the "html must code" from this template by "extends"
 
-?? make forms for input in metals
+?? make forms for input in metals   
 ?? change template for metal - for display values
 
