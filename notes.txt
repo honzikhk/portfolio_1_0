@@ -31,6 +31,7 @@ added .gitignore file
 
 made base.html as a master template. every page will "inheritate" the "html must code" from this template by "extends"
 
-?? make forms for input in metals   
-?? change template for metal - for display values
+?? make forms for input in metals |-> OK
+?? make method "get_absolute_url" to model. Its for redirect after submit new metal
+?? change template for metal - for display values from db
 
