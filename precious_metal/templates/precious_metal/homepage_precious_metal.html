@@ -5,4 +5,9 @@
 <p><a href="{% url "metal_create" %}">create</a></p>
 <p>Gold - 50000 USD</p>
 <p>Silver - 7770000 USD</p>
+
+<h1>list of metals:</h1>
+{% for metal in object_list %}
+        <p>{{ metal.item }} -> {{ metal.value }} USD</p>
+    {% endfor %}
 {% endblock body %}

@@ -32,6 +32,8 @@ added .gitignore file
 made base.html as a master template. every page will "inheritate" the "html must code" from this template by "extends"
 
 ?? make forms for input in metals |-> OK
-?? make method "get_absolute_url" to model. Its for redirect after submit new metal
-?? change template for metal - for display values from db
+?? make method "get_absolute_url" to model. Its for redirect after submit new metal |-> OK
+?? change template for metal - for display values from db |-> OK
+
+add for loop to homepage_precious_metal template. Object_list was already in listview
 
