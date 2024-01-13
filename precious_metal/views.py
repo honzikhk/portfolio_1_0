@@ -8,6 +8,7 @@ class PreciousMetalHomepage(ListView):
 
 
 class CreateMetal(CreateView):
+    # after click on "submit" it redirect to "precious_metal_homepage" because of the method in model "get_absolute_url"
     template_name = "precious_metal/metal_create.html"  #try to remove "precious_metal/"
     form_class = MetalForm
     model = PreciousMetal
