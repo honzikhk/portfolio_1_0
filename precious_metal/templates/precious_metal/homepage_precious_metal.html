@@ -3,11 +3,16 @@
 {% block body %}
 <p>Homepage for precious metals</p>
 <p><a href="{% url "metal_create" %}">create</a></p>
-<p>Gold - 50000 USD</p>
-<p>Silver - 7770000 USD</p>
 
 <h1>list of metals:</h1>
 {% for metal in object_list %}
-        <p>{{ metal.item }} -> {{ metal.value }} USD</p>
+        <p>{{ metal.item }} -> {{ metal.value }} USD    note:
+            {% if metal.note == None %}
+                <span>there is no note</span>
+            {% else %}
+                <span>{{ metal.note }}</span>
+            {% endif %}
+        </span>
+        </p>
     {% endfor %}
 {% endblock body %}
