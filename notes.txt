@@ -36,4 +36,10 @@ made base.html as a master template. every page will "inheritate" the "html must
 ?? change template for metal - for display values from db |-> OK
 
 add for loop to homepage_precious_metal template. Object_list was already in listview
+if statement to homepage_precious_metal.html. later change to anything else
+
+?? add delete view to each metal and confirm page
+?? add summary in dollars of category metal to homepage (precious metals - 59512 USD)
+
+
 
