@@ -42,8 +42,10 @@ if statement to homepage_precious_metal.html. later change to anything else
 
 created DeleteMetalView and confirmation template. 
 
-?? fix name and value in metal_confirm_delet.html
-?? add summary in dollars of category metal to homepage (precious metals - 59512 USD)
+?? fix name and value in metal_confirm_delete.html | -> OK  (insted of "metal" use "object")
+?? add summary in dollars of category metal to homepage (precious metals - 59512 USD)  | -> OK
+
+
 
 
 

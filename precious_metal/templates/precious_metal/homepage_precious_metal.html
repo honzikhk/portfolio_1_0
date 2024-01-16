@@ -2,9 +2,9 @@
 
 {% block body %}
 <p>Homepage for precious metals</p>
-<p><a href="{% url "metal_create" %}">create</a></p>
 
 <h1>list of metals:</h1>
+<p><a href="{% url "metal_create" %}">+ Add new</a></p>
 {% for metal in object_list %}
         <p>{{ metal.item }} -> {{ metal.value }} USD    note:
             {% if metal.note == None %}

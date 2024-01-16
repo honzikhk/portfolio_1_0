@@ -4,7 +4,7 @@
   <form method="post">
     {% csrf_token %}
     <p>
-      Are you sure you want to delete metal "{{ metal.name }}" with value {{ metal.value }} from database?
+      Are you sure you want to delete "{{ object.item }}" with value {{ object.value }} from database?
     </p>
     <input type="submit" value="Delete">
   </form>
