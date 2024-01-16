@@ -1,6 +1,8 @@
-from django.views.generic import ListView, CreateView
+from django.views.generic import ListView, CreateView, DeleteView
 from .models import PreciousMetal
 from precious_metal.forms import MetalForm
+from django.urls import reverse_lazy
+
 
 class PreciousMetalHomepage(ListView): #Listview has probably "objectlist" as original function
     model = PreciousMetal
@@ -12,4 +14,12 @@ class CreateMetal(CreateView):
     template_name = "precious_metal/metal_create.html"
     form_class = MetalForm
     model = PreciousMetal
+
+
+class DeleteMetal(DeleteView):
+    # after click on >delete< it redirect to "precious_metal_homepage"
+    template_name = "precious_metal/metal_confirm_delete.html"
+    model = PreciousMetal
+    success_url = reverse_lazy("precious_metal_homepage")
+    extra_context = {"page_name": "Delete metal"}
     

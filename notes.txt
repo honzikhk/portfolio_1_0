@@ -38,7 +38,11 @@ made base.html as a master template. every page will "inheritate" the "html must
 add for loop to homepage_precious_metal template. Object_list was already in listview
 if statement to homepage_precious_metal.html. later change to anything else
 
-?? add delete view to each metal and confirm page
+?? add delete view to each metal and confirm page -> OK
+
+created DeleteMetalView and confirmation template. 
+
+?? fix name and value in metal_confirm_delet.html
 ?? add summary in dollars of category metal to homepage (precious metals - 59512 USD)
 
 
