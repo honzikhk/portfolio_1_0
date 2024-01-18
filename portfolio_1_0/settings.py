@@ -41,6 +41,7 @@ INSTALLED_APPS = [
 
     "precious_metal",
     "base",
+    "real_estates",
 ]
 
 MIDDLEWARE = [

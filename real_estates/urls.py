@@ -1,4 +1,6 @@
 from django.urls import path
-from . import views
+from .views import RealEstatesHomepage
 
-urlpatterns = []
+urlpatterns = [
+    path("", RealEstatesHomepage.as_view(), name="real_estates_homepage"),
+]

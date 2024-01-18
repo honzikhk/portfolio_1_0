@@ -1,3 +1,7 @@
-from django.shortcuts import render
+from django.views.generic import ListView
+from .models import RealEstate
 
-# Create your views here.
+
+class RealEstatesHomepage(ListView):
+    model = RealEstate
+    template_name = "real_estates/homepage_real_estates.html"
