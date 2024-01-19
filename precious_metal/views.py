@@ -21,5 +21,5 @@ class DeleteMetal(DeleteView):
     template_name = "precious_metal/metal_confirm_delete.html"
     model = PreciousMetal
     success_url = reverse_lazy("precious_metal_homepage")
-    extra_context = {"page_name": "Delete metal"}
+    # extra_context = {"page_name": "Delete metal"}
     

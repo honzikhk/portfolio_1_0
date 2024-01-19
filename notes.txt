@@ -47,4 +47,6 @@ created DeleteMetalView and confirmation template.
 
 startapp real_estates etc.
 
+?? /admin page does not take my sign 
+
 

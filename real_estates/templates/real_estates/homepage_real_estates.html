@@ -12,5 +12,8 @@
         {% else %}
             <span>{{ metal.note }}</span>
         {% endif %}
+    <span>
+        <a href="{% url "real_estate_delete" real_estate.id %}">Delete</a>
+    </span>
 {% endfor %}
 {% endblock body %}
