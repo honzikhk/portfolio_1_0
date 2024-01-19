@@ -13,4 +13,4 @@ class RealEstate(models.Model):
         return self.item        # represent objects by their names in admin page. also can be used fstring
     
     def get_absolute_url(self):     # this method redirect to "precious_metal_homepage" after click submit
-        return resolve_url("real_estates_hompage")
+        return resolve_url("real_estates_homepage")
