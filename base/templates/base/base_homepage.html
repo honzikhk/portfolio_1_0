@@ -1,6 +1,9 @@
 {% extends "base/base.html" %}
 
 {% block body %}
-<p>here will be overview of assets</p>
-<p>Precious metals: {{ count_of_items }} in total value {{ sum_of_values }}</p>
+
+<p>Your portfolio contains:</p>
+<p>{{ precious_metals_count_of_items }} precious metals in total value {{ precious_metals_sum_of_values }}</p>
+<p>{{ real_estates_count_of_items }} real estates in total vlaue {{ real_estates_sum_of_values }}</p>
+
 {% endblock body %}

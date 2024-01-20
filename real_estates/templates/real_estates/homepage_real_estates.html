@@ -1,12 +1,10 @@
 {% extends "base/base.html" %}
 
 {% block body %}
-<p>Homepage for real estates</p>
-
-<h1>List of real estates:</h1>
+<h1>Homepage for real estates</h1><br>
 <p><a href="{% url "real_estate_create" %}">+ Add new</a></p>
 {% for real_estate in object_list %}
-    <p>{{ real_estate.item }} -> {{ real_estate.value }} USD</p>
+    <p>{{ real_estate.item }} -> {{ real_estate.value }} USD
         {% if metal.note == None %}
             <span>there is no note</span>
         {% else %}
@@ -15,5 +13,6 @@
     <span>
         <a href="{% url "real_estate_delete" real_estate.id %}">Delete</a>
     </span>
+    </p>
 {% endfor %}
 {% endblock body %}

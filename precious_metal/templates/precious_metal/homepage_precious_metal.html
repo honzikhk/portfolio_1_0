@@ -1,9 +1,7 @@
 {% extends "base/base.html" %}
 
 {% block body %}
-<p>Homepage for precious metals</p>
-
-<h1>list of metals:</h1>
+<h1>Homepage for precious metals</h1><br>
 <p><a href="{% url "metal_create" %}">+ Add new</a></p>
 {% for metal in object_list %}
         <p>{{ metal.item }} -> {{ metal.value }} USD    note:
@@ -12,7 +10,6 @@
             {% else %}
                 <span>{{ metal.note }}</span>
             {% endif %}
-        </span>
         <span>
             <a href="{% url "metal_delete" metal.id %}">Delete</a>
         </span>
