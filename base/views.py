@@ -25,6 +25,8 @@ class BaseHomepageView(TemplateView):
             "precious_metals_sum_of_values": self.count_sum_of_values_precious_metals(),
             "real_estates_count_of_items": RealEstate.objects.all().count(),        # shows how many items is in real estates
             "real_estates_sum_of_values": self.count_sum_of_values_real_estates(),
+            #"value_of_all_assets": 
+
         }
         return TemplateResponse(request, "base/base_homepage.html", context=context)
 
