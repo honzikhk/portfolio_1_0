@@ -1,0 +1,18 @@
+{% extends "base/base.html" %}
+
+{% block body %}
+<h1>Homepage for cryptocurrencies</h1><br>
+<p><a href="{% url "cryptocurrency_create" %}">+ Add new</a></p>
+{% for currency in object_list %}
+    <p>{{ currency.item }} -> {{ currency.value }} USD
+        {% if currency.note == None %}
+            <span>there is no note</span>
+        {% else %}
+            <span>{{ currency.note }}</span>
+        {% endif %}
+    <span>
+        <a href="{% url "cryptocurrency_delete" currency.id %}">Delete</a>
+    </span>
+    </p>
+{% endfor %}
+{% endblock body %}
