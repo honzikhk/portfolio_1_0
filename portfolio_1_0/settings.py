@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     "base",
     "real_estates",
     "cryptocurrencies",
+    "cash",
 ]
 
 MIDDLEWARE = [

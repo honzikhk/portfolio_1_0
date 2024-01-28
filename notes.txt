@@ -50,4 +50,5 @@ startapp real_estates etc.
 
 ?? /admin page does not take my sign -> because previously i deleted db :D OK
 
-
+?? copy coments from first app to others. its same for all. for better understanding
+?? in VSCode dbviewer is not display value and id in database
