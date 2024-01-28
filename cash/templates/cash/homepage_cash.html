@@ -1,0 +1,12 @@
+{% extends "base/base.html" %}
+
+{% block body %}
+<h1>Homepage for cash</h1>
+<p><a href="{% url "cash_create" %}">+ Add new</a></p>
+
+
+{% for item in object_list %}
+    <p>{{ item.item }} -> {{ item.value }} USD</p>
+{% endfor %}
+
+{% endblock body %}
