@@ -27,12 +27,19 @@ class BaseHomepageView(TemplateView):
             sum += currency.value
         return sum
     
-    def count_sum_of_cash(self):
+    def count_sum_of_values_cash(self):
         sum = 0
         for item in Cash.objects.all():
             sum += item.value
         return sum
-
+    
+    def sum_of_all_assets(self):
+        cash = self.count_sum_of_values_cash()
+        real_estates = self.count_sum_of_values_real_estates()
+        cryptocurrencies = self.count_sum_of_values_cryptocurrencies()
+        precious_metals = self.count_sum_of_values_precious_metals()
+        return cash + real_estates + cryptocurrencies + precious_metals
+    
     def get(self, request, *args, **kwargs):    # maybe remove *args, **kwargs
         context = {
             "precious_metals_count_of_items": PreciousMetal.objects.all().count(),      # shows how many items is in precoius metals
@@ -42,9 +49,9 @@ class BaseHomepageView(TemplateView):
             "cryptocurrencies_count_of_items": Cryptocurrency.objects.all().count(),
             "cryptocurrencies_sum_of_values": self.count_sum_of_values_cryptocurrencies(),
             "cash_count_of_items": Cash.objects.all().count(),
-            "cash_sum_of_values": self.count_sum_of_cash(),
+            "cash_sum_of_values": self.count_sum_of_values_cash(),
 
-            #"value_of_all_assets": 
+            "value_of_all_assets": self.sum_of_all_assets(),
 
         }
         return TemplateResponse(request, "base/base_homepage.html", context=context)
