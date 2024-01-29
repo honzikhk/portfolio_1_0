@@ -3,6 +3,7 @@ from precious_metal.models import PreciousMetal
 from real_estates.models import RealEstate
 from cryptocurrencies.models import Cryptocurrency
 from django.template.response import TemplateResponse
+from cash.models import Cash
 
 
 class BaseHomepageView(TemplateView):
@@ -25,6 +26,12 @@ class BaseHomepageView(TemplateView):
         for currency in Cryptocurrency.objects.all():
             sum += currency.value
         return sum
+    
+    def count_sum_of_cash(self):
+        sum = 0
+        for item in Cash.objects.all():
+            sum += item.value
+        return sum
 
     def get(self, request, *args, **kwargs):    # maybe remove *args, **kwargs
         context = {
@@ -34,7 +41,9 @@ class BaseHomepageView(TemplateView):
             "real_estates_sum_of_values": self.count_sum_of_values_real_estates(),
             "cryptocurrencies_count_of_items": Cryptocurrency.objects.all().count(),
             "cryptocurrencies_sum_of_values": self.count_sum_of_values_cryptocurrencies(),
-            
+            "cash_count_of_items": Cash.objects.all().count(),
+            "cash_sum_of_values": self.count_sum_of_cash(),
+
             #"value_of_all_assets": 
 
         }

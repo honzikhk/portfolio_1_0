@@ -6,7 +6,16 @@
 
 
 {% for item in object_list %}
-    <p>{{ item.item }} -> {{ item.value }} USD</p>
+    <p>{{ item.item }} -> {{ item.value }} USD
+        {% if item.note == None %}
+            <span>there is no note</span>
+        {% else %}
+            <span>{{ item.note }}</span>
+        {% endif %}
+    <span>
+        <a href="{% url "cash_delete" item.id %}">Delete</a>
+    </span>
+    </p>
 {% endfor %}
 
 {% endblock body %}
