@@ -1,7 +1,7 @@
 {% extends "base/base.html" %}
 
 {% block body %}
-<h1>Homepage for real estates</h1><br>
+<h1>Homepage for real estates</h1>
 <p><a href="{% url "real_estate_create" %}">+ Add new</a></p>
 {% for real_estate in object_list %}
     <p>{{ real_estate.item }} -> {{ real_estate.value }} USD

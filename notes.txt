@@ -52,6 +52,6 @@ startapp real_estates etc.
 
 ?? copy coments from first app to others. its same for all. for better understanding -> all comments only in precoius metals app(every app same) | OK
 ?? in VSCode dbviewer is not display value and id in database -> installed sqlite3 editor | OK
-?? delete view in urls.py takes argument pk. where? how it works
+?? delete view in urls.py takes argument pk. where? how it works -> link "delete" on app homepage, contains id of current item -> deleteview know which delete | OK
 ?? jinja2 does not finish frases in VSCode
 

@@ -1,7 +1,7 @@
 {% extends "base/base.html" %}
 
 {% block body %}
-<h1>Homepage for cryptocurrencies</h1><br>
+<h1>Homepage for cryptocurrencies</h1>
 <p><a href="{% url "cryptocurrency_create" %}">+ Add new</a></p>
 {% for currency in object_list %}
     <p>{{ currency.item }} -> {{ currency.value }} USD
