@@ -50,8 +50,8 @@ startapp real_estates etc.
 
 ?? /admin page does not take my sign -> because previously i deleted db :D OK
 
-?? copy coments from first app to others. its same for all. for better understanding
-?? in VSCode dbviewer is not display value and id in database
+?? copy coments from first app to others. its same for all. for better understanding -> all comments only in precoius metals app(every app same) | OK
+?? in VSCode dbviewer is not display value and id in database -> installed sqlite3 editor | OK
 ?? delete view in urls.py takes argument pk. where? how it works
 ?? jinja2 does not finish frases in VSCode
 

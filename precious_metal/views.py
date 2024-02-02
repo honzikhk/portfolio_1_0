@@ -4,7 +4,8 @@ from precious_metal.forms import MetalForm
 from django.urls import reverse_lazy
 
 
-class PreciousMetalHomepage(ListView): #Listview has probably "objectlist" as original function
+class PreciousMetalHomepage(ListView):
+    #Listview has probably "objectlist" as original function
     model = PreciousMetal
     template_name = "precious_metal/homepage_precious_metal.html" 
 
